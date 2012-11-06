@@ -2,32 +2,32 @@ namespace :db do
   desc "Seed users"
   task pop_users: :environment do
     User.create!(name: "Jas",
-                email: "jasdeepsgarcha@gmail.com",
+                email: "jman1211@yahoo.com",
                 phone: "9192158521",
                 chore_done: false,
                 ref_id: 1)
     User.create!(name: "Harsh",
-                email: "",
+                email: "harshjshah@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 2)
     User.create!(name: "John",
-                email: "",
+                email: "howardjw@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 3)
     User.create!(name: "EMart",
-                email: "",
+                email: "eric.long.martin@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 4)
     User.create!(name: "Will",
-                email: "",
+                email: "wgpatrick@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 5)
     User.create!(name: "Eric",
-                email: "",
+                email: "ricehornet@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 6)

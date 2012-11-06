@@ -12,7 +12,7 @@ class UsersController < ApplicationController
         puts 'yay!'
       else
         if (user.chore.sample != nil) && (Time.now.to_i - user.chore.sample.to_i) > 518400 && user.phone.to_i > 1
-          call_user(user.phone)
+         # call_user(user.phone)
         elsif (user.chore.sample != nil) && (Time.now.to_i - user.chore.sample.to_i) > 435600 && user.phone.to_i > 1
           send_text_message(user.phone)
         end
