@@ -7,27 +7,27 @@ namespace :db do
                 chore_done: false,
                 ref_id: 1)
     User.create!(name: "Harsh",
-                email: "harshjshah@gmail.com",
+                email: "",#harshjshah@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 2)
     User.create!(name: "John",
-                email: "howardjw@gmail.com",
+                email: "",#howardjw@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 3)
     User.create!(name: "EMart",
-                email: "eric.long.martin@gmail.com",
+                email: "",#eric.long.martin@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 4)
     User.create!(name: "Will",
-                email: "wgpatrick@gmail.com",
+                email: "",#wgpatrick@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 5)
     User.create!(name: "Eric",
-                email: "ricehornet@gmail.com",
+                email: "",#ricehornet@gmail.com",
                 phone: "1",
                 chore_done: false,
                 ref_id: 6)
