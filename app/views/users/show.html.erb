@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<!--<table>
+	<tr>
+		<th> Name </th>
+		<th> Chore </th>
+		<th> Done? </th>
+		<th> Mark completed </th>
+	</tr>
+	<tr>
+		<%= @user.each do |user| %>
+			<td> <% user.name %> </td>
+			<td> <% user.chore %> </td>
+			<% if user.chore_done? %> 
+				<td> Yes </td>
+			<% else %> 
+				<td> No </td>	
+			<% end %>
+		<% end %> 
+	</tr>
+</table>-->
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
