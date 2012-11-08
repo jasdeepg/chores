@@ -41,19 +41,19 @@ class ApplicationController < ActionController::Base
       )
   end
 
-  def send_text_message(number)
+  def send_text_message(user)
     twilio_sid = "ACc6a3bb9730a164011e1cc7ef3f596def"
     twilio_token = "2ed74aec38d1156ec3e97406f2d59792"
     twilio_phone_number = "9198096187"
 
     @twilio_client = Twilio::REST::Client.new twilio_sid, twilio_token
 
-    number_to_send_to = number
+    number_to_send_to = user.phone
 
     @twilio_client.account.sms.messages.create(
       :from => "+1#{twilio_phone_number}",
       :to => number_to_send_to,
-      :body => "This is an message. It gets sent to #{number_to_send_to}"
+      :body => "#{user.name}, you still haven't cleaned up the #{user.chore.name}, bro :("
     )
   end
 end

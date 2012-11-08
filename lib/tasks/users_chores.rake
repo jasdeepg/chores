@@ -7,41 +7,41 @@ namespace :db do
                 chore_done: false,
                 ref_id: 1)
     User.create!(name: "Harsh",
-                email: "",#harshjshah@gmail.com",
-                phone: "1",
+                email: "harshjshah@gmail.com",
+                phone: "4156694617",
                 chore_done: false,
                 ref_id: 2)
     User.create!(name: "John",
-                email: "",#howardjw@gmail.com",
-                phone: "1",
+                email: "howardjw@gmail.com",
+                phone: "4129797105",
                 chore_done: false,
                 ref_id: 3)
     User.create!(name: "EMart",
-                email: "",#eric.long.martin@gmail.com",
-                phone: "1",
+                email: "eric.long.martin@gmail.com",
+                phone: "2095072852",
                 chore_done: false,
                 ref_id: 4)
     User.create!(name: "Will",
-                email: "",#wgpatrick@gmail.com",
-                phone: "1",
+                email: "wgpatrick@gmail.com",
+                phone: "9196225123",
                 chore_done: false,
                 ref_id: 5)
     User.create!(name: "Eric",
-                email: "",#ricehornet@gmail.com",
-                phone: "1",
+                email: "ricehornet@gmail.com",
+                phone: "5022962965",
                 chore_done: false,
                 ref_id: 6)
   end
 
   desc "Fill database with chores"
   task pop_chores: :environment do
-    Chore.create!(name:"Kitchen",
+    Chore.create!(name:"Kitchen 1",
                   user_id: 1)
     Chore.create!(name:"Library + Entrance",
                   user_id: 2)
     Chore.create!(name:"Hallway",
                   user_id: 3)
-    Chore.create!(name:"Kitchen",
+    Chore.create!(name:"Kitchen 2",
                   user_id: 4)
     Chore.create!(name:"Living Room",
                   user_id: 5)
